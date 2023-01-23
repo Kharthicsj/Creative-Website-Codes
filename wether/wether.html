@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet.css">
     <title>Document</title>
     
 </head>
 <body>
-    <h1>WETHER</h1>
-    
-    <input type="text" id="city" placeholder="ENTER CITY NAME"><br>
-    <BUtton onclick="temp()" >SEARCH</BUtton>
+    <div  class="h1">
+    <h1>Temperature</h1>
+    <div class="Search_Box"><br>
+    <input type="text" id="city" placeholder="ENTER CITY NAME"><br><br>
+    <BUtton onclick="temp()" id="bu">SEARCH</BUtton>
     <h4 id="cityname"></h4>
     <h2 id="temp"></h2>
     <script>
@@ -30,7 +32,9 @@
     })
 }
     </script>
-    
+</div> 
+</div> 
+
 </body>
 
 </html>
