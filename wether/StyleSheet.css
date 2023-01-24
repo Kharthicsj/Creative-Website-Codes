@@ -1,27 +1,46 @@
 
-.h1{
-    padding:30%;
-    text-align: center;
-    background-position: fixed;
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-.Search_Box{
-    background-size: cover;
-    background-image: url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg);
-    background-repeat: no-repeat;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 25%;
+body{
+    height: 100vh;
+    background-color: rgba(25, 35, 45, 0.678);
+}
+.title{
+    text-align: center;
+    transform: translateY(90px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(223, 232, 235, 0.737);
+}
+.h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
 }
+.Search_Box{
+    background-image: url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 180px;
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+}
 #city{
-    padding: 30px;
-    width: auto;
+    padding: 20px;
+    transform: translateY(-110%);
 }
 #bu{
-    width: auto;
-    padding: 25px;
+    width: 50%;
+    border: 0;
+    padding: 15px;
     background-color: green;
     color:aliceblue;
+    transform: translate(50%,-110%);
 }
-#temp{
-    color: white;
+#bu:hover{
+    background-color: rgb(0, 217, 255);
+    cursor: pointer;
 }
