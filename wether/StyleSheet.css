@@ -44,15 +44,14 @@ body{
     cursor: pointer;
 }
 #temp{
+    transform: translate(-140px,-90px);
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
     font-size: 30px;
-    transform: translate(-70%,-270%);
-    
     animation-name: UpSlider;
-    animation-duration: 5s;
+    animation-duration: 2.8s;
     animation-timing-function: ease-in-out;
-    animation-delay: 0s;
+    animation-delay: 3.8s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
@@ -62,12 +61,33 @@ body{
     color: aliceblue;
     font-size: 35px;
     transform: translate(-70%,-150%);
+
+    animation-name: CityAnimation;
+    animation-duration: 2.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
 }
 @keyframes UpSlider{
     from{
-        transform: translateY(800px);
+        transform: translate(-200px,-90px);
+        opacity: 0;
     }
     to{
-        transform: translate(-139px,-270%);
+        /*transform: translate(-139px,-270%);*/
+        transform: translate(-139px,-90px);
+        opacity: 100px;
+    }
+}
+@keyframes CityAnimation{
+    from{
+        opacity: 0;
+        transform: translate(-250px,-60px);
+    }
+    to{
+        opacity: 100px;
+        transform: translate(-139px,-60px);
     }
 }
